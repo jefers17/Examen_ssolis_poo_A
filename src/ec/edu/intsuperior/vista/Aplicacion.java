@@ -16,8 +16,9 @@ import java.util.Scanner;
  */
 public class Aplicacion {
     public static void main(String[] args) {
-        Cliente c1=new Cliente();
+        
         Scanner leer=new Scanner(System.in);
+        Cliente c1=new Cliente();
         
         
                 System.out.println("Opcion 1: Empleado");
@@ -32,7 +33,7 @@ public class Aplicacion {
             c1.setEdad(leer.nextInt());
             System.out.println("Ingrese el sueldo bruto del empleado");
             c1.setSueldo_bruto(leer.nextDouble());
-            System.out.println("Ingrese el sueldo categoria del empleado");
+            System.out.println("Ingrese la categoria del empleado");
             c1.setCategoria(leer.next());
             System.out.println("Ingrese la empresa al que pertence el empleado");
             c1.setNombre_de_la_empresa(leer.next());
@@ -53,6 +54,7 @@ public class Aplicacion {
             System.out.println("Ingrese la empresa al que pertence el cliente");
             c1.setNombre_de_la_empresa(leer.next());
             System.out.println("Ingrese el numero de telefono del cliente");
+            c1.setTelefono_de_contacto(leer.nextFloat());
             System.out.println("Los datos igresados son"+"\n"
             +"nombre "+c1.getNombre()+"\n"
             +"Edad "+c1.getEdad()+"\n"

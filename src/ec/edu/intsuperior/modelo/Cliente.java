@@ -14,10 +14,17 @@ public class Cliente extends Empresa{
    
     private float telefono_de_contacto;
 
+    public Cliente() {
+        super(null, null, null, null, 0);
+    }
+
+    
     public Cliente(float telefono_de_contacto, String nombre_de_la_empresa, Double sueldo_bruto, String categoria, String nombre, int edad) {
         super(nombre_de_la_empresa, sueldo_bruto, categoria, nombre, edad);
         this.telefono_de_contacto = telefono_de_contacto;
     }
+
+    
 
     
 
